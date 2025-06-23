@@ -1,47 +1,51 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Calculadora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora Futurista</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="dark-theme">
-  <div class="top-bar">
-    <button id="themeToggle">🌙 / ☀️</button>
+<body class="dark-mode">
+  <div class="equation-background">
+    <!-- Cálculos de fundo animados -->
+    <div class="equation" style="top: 5%; font-size: 28px; animation-duration: 20s; animation-delay: 1s;">E=mc²</div>
+    <div class="equation" style="top: 15%; font-size: 30px; animation-duration: 18s; animation-delay: 3s;">∇·E=ρ/ε₀</div>
+    <div class="equation" style="top: 25%; font-size: 24px; animation-duration: 26s; animation-delay: 4s;">λ = h/p</div>
+    <div class="equation" style="top: 35%; font-size: 32px; animation-duration: 22s; animation-delay: 2s;">Δx·Δp ≥ ħ/2</div>
+    <div class="equation" style="top: 45%; font-size: 26px; animation-duration: 28s; animation-delay: 5s;">F = G(m₁m₂)/r²</div>
+    <div class="equation" style="top: 55%; font-size: 29px; animation-duration: 25s; animation-delay: 3s;">∮B·dl = μ₀I</div>
+    <div class="equation" style="top: 65%; font-size: 23px; animation-duration: 24s; animation-delay: 6s;">E = -∇V</div>
+    <div class="equation" style="top: 75%; font-size: 27px; animation-duration: 21s; animation-delay: 2s;">a² + b² = c²</div>
+    <div class="equation" style="top: 85%; font-size: 30px; animation-duration: 20s; animation-delay: 4s;">ψ(x,t)</div>
+    <div class="equation" style="top: 95%; font-size: 25px; animation-duration: 23s; animation-delay: 1s;">PV = nRT</div>
   </div>
 
-  <div class="calculator">
+  <button class="toggle-mode" onclick="toggleMode()">🌙</button>
+
+  <div class="container">
     <h1>Calculadora</h1>
-    <input type="text" id="display" disabled />
+    <input type="text" id="display" readonly />
     <div class="buttons">
       <button onclick="clearDisplay()">C</button>
       <button onclick="append('+')">+</button>
       <button onclick="append('*')">×</button>
       <button onclick="append('-')">-</button>
-
       <button onclick="append('7')">7</button>
       <button onclick="append('8')">8</button>
       <button onclick="append('9')">9</button>
       <button onclick="append('/')">÷</button>
-
       <button onclick="append('4')">4</button>
       <button onclick="append('5')">5</button>
       <button onclick="append('6')">6</button>
       <button onclick="calculate()">=</button>
-
       <button onclick="append('1')">1</button>
       <button onclick="append('2')">2</button>
       <button onclick="append('3')">3</button>
       <button onclick="append('0')">0</button>
-
       <button onclick="append('.')">.</button>
     </div>
   </div>
-
-  <canvas class="background-expressions" id="formulas"></canvas>
-
   <script src="script.js"></script>
 </body>
 </html>
