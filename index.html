@@ -2,19 +2,243 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Calculadora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora Futurista</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <button id="toggleMode">🌙</button>
-  <div class="background"></div>
-  <div class="calculator">
+<body class="dark-mode">
+  <div class="equation-background">
+    <div class="equation" style="
+        top: 60%;
+        font-size: 34px;
+        animation-duration: 25.720554741761227s;
+        animation-delay: 8.381300448561223s;
+    ">∫e^x dx = e^x + C</div>
+    
+    <div class="equation" style="
+        top: 48%;
+        font-size: 30px;
+        animation-duration: 28.05058704039997s;
+        animation-delay: 9.342998472825306s;
+    ">Δx·Δp ≥ ħ/2</div>
+    
+    <div class="equation" style="
+        top: 63%;
+        font-size: 35px;
+        animation-duration: 18.228268139537136s;
+        animation-delay: 9.648502224763927s;
+    ">d²x/dt² = -ω²x</div>
+    
+    <div class="equation" style="
+        top: 60%;
+        font-size: 31px;
+        animation-duration: 26.880757471885254s;
+        animation-delay: 5.282558809090951s;
+    ">∮B·dl = μ₀I</div>
+    
+    <div class="equation" style="
+        top: 47%;
+        font-size: 23px;
+        animation-duration: 16.817785369181657s;
+        animation-delay: 8.38925441294678s;
+    ">τ = Iα</div>
+    
+    <div class="equation" style="
+        top: 19%;
+        font-size: 26px;
+        animation-duration: 27.612450096207702s;
+        animation-delay: 9.695047072733056s;
+    ">F=G(m₁m₂)/r²</div>
+    
+    <div class="equation" style="
+        top: 64%;
+        font-size: 28px;
+        animation-duration: 16.627274417270403s;
+        animation-delay: 8.262351506377152s;
+    ">∫e^x dx = e^x + C</div>
+    
+    <div class="equation" style="
+        top: 32%;
+        font-size: 26px;
+        animation-duration: 23.637188428741837s;
+        animation-delay: 6.365204888755s;
+    ">∑F = ma</div>
+    
+    <div class="equation" style="
+        top: 14%;
+        font-size: 20px;
+        animation-duration: 16.741865232965004s;
+        animation-delay: 4.973751803754319s;
+    ">F=ma</div>
+    
+    <div class="equation" style="
+        top: 40%;
+        font-size: 30px;
+        animation-duration: 24.35918416000245s;
+        animation-delay: 0.18696749371821864s;
+    ">Δx·Δp ≥ ħ/2</div>
+    
+    <div class="equation" style="
+        top: 46%;
+        font-size: 34px;
+        animation-duration: 28.003099062073716s;
+        animation-delay: 7.672636791148638s;
+    ">Δx·Δp ≥ ħ/2</div>
+    
+    <div class="equation" style="
+        top: 80%;
+        font-size: 21px;
+        animation-duration: 19.35145718374099s;
+        animation-delay: 4.360358573093376s;
+    ">E = -∇V</div>
+    
+    <div class="equation" style="
+        top: 27%;
+        font-size: 33px;
+        animation-duration: 20.847793487509445s;
+        animation-delay: 6.01514461622253s;
+    ">λ = h/p</div>
+    
+    <div class="equation" style="
+        top: 9%;
+        font-size: 33px;
+        animation-duration: 18.624737729922593s;
+        animation-delay: 1.062311362115207s;
+    ">E=mc²</div>
+    
+    <div class="equation" style="
+        top: 67%;
+        font-size: 34px;
+        animation-duration: 25.258462887552213s;
+        animation-delay: 0.07211422937888456s;
+    ">τ = Iα</div>
+    
+    <div class="equation" style="
+        top: 43%;
+        font-size: 33px;
+        animation-duration: 10.28664799441014s;
+        animation-delay: 3.077148850194712s;
+    ">∮B·dl = μ₀I</div>
+    
+    <div class="equation" style="
+        top: 27%;
+        font-size: 24px;
+        animation-duration: 26.829699392957266s;
+        animation-delay: 6.950110304832906s;
+    ">∇·E=ρ/ε₀</div>
+    
+    <div class="equation" style="
+        top: 59%;
+        font-size: 26px;
+        animation-duration: 21.14865445055446s;
+        animation-delay: 5.4867586071320416s;
+    ">R = ρL/A</div>
+    
+    <div class="equation" style="
+        top: 33%;
+        font-size: 32px;
+        animation-duration: 18.833353520598074s;
+        animation-delay: 3.1590748666086297s;
+    ">L = r × p</div>
+    
+    <div class="equation" style="
+        top: 85%;
+        font-size: 25px;
+        animation-duration: 22.171981044845666s;
+        animation-delay: 2.389411242773277s;
+    ">R = ρL/A</div>
+    
+    <div class="equation" style="
+        top: 53%;
+        font-size: 35px;
+        animation-duration: 19.80394617704144s;
+        animation-delay: 9.538470729189136s;
+    ">R = ρL/A</div>
+    
+    <div class="equation" style="
+        top: 62%;
+        font-size: 24px;
+        animation-duration: 24.401524938902966s;
+        animation-delay: 9.217864665061159s;
+    ">∫Fdx = mv²/2</div>
+    
+    <div class="equation" style="
+        top: 76%;
+        font-size: 33px;
+        animation-duration: 27.08930476811768s;
+        animation-delay: 3.849090101402637s;
+    ">F=G(m₁m₂)/r²</div>
+    
+    <div class="equation" style="
+        top: 7%;
+        font-size: 24px;
+        animation-duration: 20.301153859237214s;
+        animation-delay: 6.715243795531885s;
+    ">E=hf</div>
+    
+    <div class="equation" style="
+        top: 16%;
+        font-size: 34px;
+        animation-duration: 18.97367830330886s;
+        animation-delay: 3.685553603777106s;
+    ">W = ∫F·ds</div>
+    
+    <div class="equation" style="
+        top: 5%;
+        font-size: 23px;
+        animation-duration: 24.350493679643748s;
+        animation-delay: 7.725459784509291s;
+    ">F=ma</div>
+    
+    <div class="equation" style="
+        top: 37%;
+        font-size: 26px;
+        animation-duration: 17.214911059958403s;
+        animation-delay: 7.765350900949828s;
+    ">R = ρL/A</div>
+    
+    <div class="equation" style="
+        top: 85%;
+        font-size: 30px;
+        animation-duration: 11.877036198202585s;
+        animation-delay: 3.592580397277544s;
+    ">R = ρL/A</div>
+    
+    <div class="equation" style="
+        top: 46%;
+        font-size: 21px;
+        animation-duration: 21.25809696206803s;
+        animation-delay: 1.244113548620055s;
+    ">∫Fdx = mv²/2</div>
+    
+    <div class="equation" style="
+        top: 88%;
+        font-size: 23px;
+        animation-duration: 17.50834129299205s;
+        animation-delay: 4.7146424207655935s;
+    ">F=G(m₁m₂)/r²</div>
+    </div>
+  <button class="toggle-mode" onclick="toggleMode()">🌙</button>
+  <div class="container">
     <h1>Calculadora</h1>
-    <input type="text" id="display" disabled />
+    <input type="text" id="display" readonly />
     <div class="buttons">
       <button onclick="clearDisplay()">C</button>
-      <!-- ...outros botões... -->
+      <button onclick="append('+')">+</button>
+      <button onclick="append('*')">×</button>
+      <button onclick="append('-')">-</button>
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button onclick="append('/')">÷</button>
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button onclick="append('0')">0</button>
       <button onclick="append('.')">.</button>
     </div>
   </div>
